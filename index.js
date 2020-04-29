@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://sauravsky:test-123@cluster0-ms87l.mongodb.net/blogDB", {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
@@ -73,6 +73,21 @@ app.get("/about", function(req, res){
 app.get("/contact", function(req, res){
   res.render("contact", {contactContent: contactContent});
 });
+
+app.post("/delete",function(req,res){
+    
+  if(req.body.titleName===req.body.delete){
+    Post.findOneAndDelete({title:req.body.delete},function(err,result){
+      if(!err){
+        console.log("succesfully deleted");
+    res.redirect("/");}
+      });
+  }
+    else{
+      console.log("cant find");
+    }
+});
+// });
 
 
 app.listen(3000, function() {

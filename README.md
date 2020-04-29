@@ -1,6 +1,6 @@
 # Blog-Website
 
-This website helps you to prepare your daily blogs easily having simple and easy to use interface. You can  create a new blog by adding */compose* in url and now you fill Title and content of the new blog that you want to post on the website.The new blog will also be added on the home page but in only 100 characters and it has a link **Readmore** on clicking it you go to that particular blog only using specific **ID** of all the blogs created. The blogs are stored in a database using mongodb. So,whatever you add will be inserted in the database and remain there unless you delete it manually.
+This website helps you to prepare your daily blogs easily having simple and easy to use interface. You can  create a new blog by adding */compose* in url and now you fill Title and content of the new blog that you want to post on the website.you can even delete the posted blogs on the website if you want. The new blog will also be added on the home page but in only 100 characters and it has a link **Readmore** on clicking it you go to that particular blog only using specific **ID** of all the blogs created. The blogs are stored in a database using mongodb. So,whatever you add will be inserted in the database and remain there unless you delete it manually or pressing the delete it! button.After deleting that blog post will be removed from the database.
  
 
 ---
