@@ -1,11 +1,16 @@
 # Blog-Website
 
-This website helps you to prepare your daily blogs easily having simple and easy to use interface. You can  create a new blog by adding */compose* in url and now you fill Title and content of the new blog that you want to post on the website.you can even delete the posted blogs on the website if you want. The new blog will also be added on the home page but in only 100 characters and it has a link **Readmore** on clicking it you go to that particular blog only using specific **ID** of all the blogs created. The blogs are stored in a database using mongodb. So,whatever you add will be inserted in the database and remain there unless you delete it manually or pressing the delete it! button.After deleting that blog post will be removed from the database.
- 
+This website helps you to prepare your daily blogs easily having simple and easy to use interface. You can  create a new blog by adding */compose* in url and now you fill Title and content of the new blog that you want to post on the website.you can even delete the posted blogs on the website if you want. The new blog will also be added on the home page but in only 100 characters and it has a link **Readmore** on clicking it you go to that particular blog only using specific **ID** of all the blogs created. The blogs are stored in a database using mongodb. So,whatever you add will be inserted in the database and remain there unless you delete it manually or pressing the delete it! button.After deleting that blog post will be removed from the database. This website is also hosted on world wide web using the **Heroku** app. So, anyone from any part of the world can access this website. And the database is also hosted on**mongoDB-Atlas**. So, 24*7 database of this website is hosted on world wide web. And anyone can easily write blogs anytime or anywhere.
 
 ---
 
-## Major Features Used
+### My website Link : i.e using Heroku app
+
+[Blog-Website](https://shielded-island-25501.herokuapp.com/ "Visit website")
+
+---
+
+### Major Features Used
 * EJS Templates
   * EJS(Embedded JavaScript) Templates are used.As EJS templates contains a basic code that we want in every web pages.And file which contains an extension *.ejs* will be a base template for creating all other html files.
 
@@ -17,11 +22,20 @@ This website helps you to prepare your daily blogs easily having simple and easy
 * mongodb(NoSql) database is used.
   * Mongoose is one of the package of the mongodb.It allows node.js to be able to connect and talk with the mongodb database.Main objective of this mongoose is to simply writing of validation codes , shorter and easier to work with.
 
+* Heroku is used.
+
+   * we hosted our website on heroku and with the help of this now anyone around the world can access it. Heroku host our node.js server to keep our website live on the internet 24*7.
+
+* mongoDB-Atlas is used
+
+  * It hosts our mongodb database and serve up the data all time i.e 24*7 whenever needed.
+
+  * So, node.js app on heroku will be able to make necessary request to our database(that is hosted on mongodbAtlas) and can be able to perform all **CRUD** operations.
 
 ---
 
 
-## Running The Project
+### Running The Project
 
 
 * you can use fork to get my repository directly on your github account.
@@ -100,14 +114,7 @@ show collections
 
 13. Now you can perform all CRUD operations on a particular collection you want.
 
-
-  ---
-
-## My website Link : 
-
-[Blog-Website](https://sauravkumaryadav.github.io/BlogWebsite/  "Visit website")
-
 ---
 
-## Thank you
+### Thank you
 
